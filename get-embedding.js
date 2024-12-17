@@ -8,3 +8,8 @@ export async function getEmbedding(data) {
     const results = await embedder(data, { pooling: 'mean', normalize: true });
     return Array.from(results.data);
 }
+
+// let contentForEmbedding="hi, how are you?";
+// console.log("Content for embedding:", contentForEmbedding);
+// const embedding = await getEmbedding(contentForEmbedding);
+// console.log("Embedding result:", embedding);

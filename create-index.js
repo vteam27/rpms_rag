@@ -1,12 +1,12 @@
 import { MongoClient } from 'mongodb';
 
-const ATLAS_CONNECTION_STRING = "mongodb+srv://admin-vaibhav:Test123@cluster0.jprmrgj.mongodb.net"
+const ATLAS_CONNECTION_STRING = "mongodb+srv://uddeepta:uddeepta@cluster0.eiezn.mongodb.net";
 const client = new MongoClient(ATLAS_CONNECTION_STRING);
 
 async function run() {
   try {
-    const database = client.db("blogDB");
-    const collection = database.collection("posts");
+    const database = client.db("capstone");
+    const collection = database.collection("paper");
    
     // Define your Atlas Vector Search index
     const index = {
