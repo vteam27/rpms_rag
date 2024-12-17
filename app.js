@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import path from 'path';
+import path from 'path';  
 import { fileURLToPath } from 'url';
 import { ChromaClient, DefaultEmbeddingFunction } from 'chromadb';
 import { addFilesToCollection, addJsonToCollection } from './data_loader.js';
